@@ -1,20 +1,140 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Hello, world!</title>
-  </head>
-  <body>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans&display=swap" rel="stylesheet">
 
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-  </body>
-</html> 
+  <title>Day 7 Parallax Practice</title>
+</head>
+
+<body>
+  <div class="container-fluid parallax plax" id="home">
+
+    <!-- NavBar -->
+    <nav class="navbar fixed-top navbar-expand-md bg-opacity-50 navbar-dark bg-dark">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navBurger">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navBurger">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a href="#home" class="nav-link active" aria-current="page">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button">Destinations</a>
+              <ul class="dropdown-menu bg-secondary">
+                <li><a href="#china" class="dropdown-item text-light">China</a></li>
+                <li><a href="#japan" class="dropdown-item text-light">Japan</a></li>
+                <li><a href="#nz" class="dropdown-item text-light">New Zealand</a></li>
+                <li><a href="#paris" class="dropdown-item text-light">Paris</a></li>
+                <li><a href="#rome" class="dropdown-item text-light">Rome</a></li>
+              </ul>
+            <li class="nav-item"><a href="#" class="nav-link">Link</a></li>
+            <li class="nav-item"><a href="#" class="nav-link disabled">Disabled</a></li>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- End NavBar -->
+
+    <!-- Title Card -->
+    <div class="row justify-content-center align-items-center h-100">
+      <div class="col-9 p-5 text-center text-light">
+        <p class="h1 title-text">Travel the World</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Destination Pics and Cards -->
+  <div class="container-fluid parallax plax1" id="china">
+    <div class="row justify-content-center align-items-center h-100">
+      <div class="col-6 p-4 text-center travel-card bg-opacity-75 bg-dark text-light">
+        <p class="h1 mb-4">Welcome to China!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente fuga, accusamus inventore est, sequi
+          consequuntur dolorum sed maxime voluptates voluptatibus autem saepe reprehenderit temporibus excepturi quaerat
+          placeat perspiciatis, corrupti magnam.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid parallax plax2" id="japan">
+    <div class="row justify-content-center align-items-center h-100">
+      <div class="col-6 p-5 text-center travel-card bg-opacity-75 bg-dark text-light">
+        <p class="h1 mb-4">Visit Japan!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere quae mollitia qui cum rem, deserunt fugiat
+          dicta minus eum! Officia maxime tempora earum quos ducimus adipisci autem mollitia similique distinctio!</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid parallax plax3" id="nz">
+    <div class="row justify-content-center align-items-center h-100">
+      <div class="col-6 p-5 text-center travel-card bg-opacity-75 bg-dark text-light">
+        <p class="h1 mb-4">See New Zealand!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi dolorem perferendis quia quisquam cum soluta
+          non minus doloremque velit iste. Quis soluta autem rerum, natus quos corrupti sequi, maiores dolores quam,
+          placeat vel molestiae. Eius, atque iste. Odio, aliquam labore.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid parallax plax4" id="paris">
+    <div class="row justify-content-center align-items-center h-100">
+      <div class="col-6 p-5 text-center travel-card bg-opacity-75 bg-dark text-light">
+        <p class="h1 mb-4">Behold Paris!</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio facilis accusantium corporis voluptas dolorem
+          inventore eos, voluptatibus itaque officia temporibus similique, dignissimos corrupti nulla nemo architecto
+          consequuntur ipsa, delectus enim! Debitis cupiditate quibusdam facere dolorum eius repellat quam repellendus
+          beatae odit minima, nemo minus delectus. Veritatis fuga praesentium libero inventore.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid parallax plax5" id="rome">
+    <div class="row justify-content-center align-items-center h-100">
+      <div class="col-6 p-5 text-center travel-card bg-opacity-75 bg-dark text-light">
+        <p class="h1 mb-4">Come to Rome!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum debitis architecto officiis quia atque
+          error, illum cupiditate rem alias harum nesciunt ut distinctio nihil illo assumenda libero! Aperiam natus
+          adipisci odit similique praesentium distinctio, sed fugit. Eligendi suscipit ab mollitia quam est laborum
+          dolorem assumenda!</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="container-fluid footer">
+    <div class="row justify-content-center align-items-center h-100 bg-danger text-light">
+      <div class="col p-4 text-center">
+        <p class="h1 mb-5">Contact</p>
+        <i class="fa-brands fa-twitter socials m-2"></i>
+        <i class="fa-brands fa-facebook-f socials m-2"></i>
+        <i class="fa-brands fa-instagram socials m-2"></i>
+        <p class="mt-5">Images: Pexels</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/60d34e7825.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

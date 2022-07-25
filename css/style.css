@@ -1,0 +1,53 @@
+.parallax{
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.plax{
+    background-image: url("../img/plax-travel.jpg");
+    height: 1280px;
+}
+
+.plax1{
+    background-image: url("../img/plax-china.jpg");
+    height: 1280px;
+}
+
+.plax2{
+    background-image: url("../img/plax-japan.jpg");
+    height: 1284px;
+}
+
+.plax3{
+    background-image: url("../img/plax-nz.jpg");
+    height: 1272px;
+}
+
+.plax4{
+    background-image: url("../img/plax-paris.jpg");
+    height: 1279px;
+}
+
+.plax5{
+    background-image: url("../img/plax-rome.jpg");
+    height: 1078px;
+}
+
+.title-text{
+    font-family: 'Lobster', cursive;
+    font-size: 5rem;
+}
+
+.travel-card{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.footer{
+    height: 30vh;
+}
+
+.socials{
+    font-size: 2rem;
+}
